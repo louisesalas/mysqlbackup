@@ -2,7 +2,6 @@
 
 namespace Louise93\Mysqlbackup\Commands;
 
-use Illuminate\Console\Command;
 
 
 use Illuminate\Console\Command;
