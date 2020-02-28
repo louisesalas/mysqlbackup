@@ -42,7 +42,7 @@ class MysqlbackupCommand extends Command
             'mysqldump -u%s -p%s %s > %s',
             env('DB_USERNAME'),
             env('DB_PASSWORD'),
-            env('DB_DATABASE')
+            env('DB_DATABASE') ,
             storage_path('backups/backup.sql')
         ));
 
