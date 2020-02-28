@@ -24,6 +24,8 @@ Run the tests with:
 vendor/bin/phpunit
 ```
 
+`tested on Laravel 6.2`
+
 ## Changelog
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 

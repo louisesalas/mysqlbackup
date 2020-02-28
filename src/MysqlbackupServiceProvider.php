@@ -27,7 +27,6 @@ class MysqlbackupServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-
         if ($this->app->runningInConsole()) {
             $this->commands([
                \Louise93\Mysqlbackup\Commands\MysqlbackupCommand::class,
