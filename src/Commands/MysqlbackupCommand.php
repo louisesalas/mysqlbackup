@@ -36,16 +36,13 @@ class MysqlbackupCommand extends Command
     {
         parent::__construct();
 
-
         $this->process = new Process(sprintf(
             env('MYSQLDUMP_PATH').'mysqldump -u%s -p%s %s > %s',
             env('DB_USERNAME'),
             env('DB_PASSWORD'),
-            env('DB_DATABASE') ,
+            env('DB_DATABASE'),
             storage_path('backups/backup.sql')
         ));
-
-
 
     }
 

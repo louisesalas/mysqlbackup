@@ -7,8 +7,15 @@
 ## Install
 `composer require louise93/mysqlbackup`
 
+## For xampp
+`Add MYSQLDUMP_PATH= in your .env file `
+
+
+
 ## Usage
-Write a few lines about the usage of this package.
+In your project folder
+
+Run : php artisan db:backup
 
 ## Testing
 Run the tests with:
