@@ -38,7 +38,7 @@ class MysqlbackupCommand extends Command
 
 
         $this->process = new Process(sprintf(
-            'mysqldump -u%s -p%s %s > %s',
+            env('MYSQLDUMP_PATH').'mysqldump -u%s -p%s %s > %s',
             env('DB_USERNAME'),
             env('DB_PASSWORD'),
             env('DB_DATABASE') ,
