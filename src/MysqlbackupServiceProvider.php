@@ -14,6 +14,9 @@ class MysqlbackupServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->commands([
+            \Louise93\Mysqlbackup\Commands\MysqlbackupCommand::class,
+        ]);
     }
 
     /**
@@ -27,7 +30,7 @@ class MysqlbackupServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Mysqlbackup::class,
+               \Louise93\Mysqlbackup\Commands\MysqlbackupCommand::class,
             ]);
         }
     }
