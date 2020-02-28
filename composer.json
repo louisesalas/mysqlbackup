@@ -1,0 +1,41 @@
+{
+    "name": "louise93/mysqlbackup",
+    "description": "Simple mysql backup for laravel.",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Louise Salas",
+            "email": "louisesalas08@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Louise93\\Mysqlbackup\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Louise93\\Mysqlbackup\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Louise93\\Mysqlbackup\\MysqlbackupServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0"
+    }
+}
