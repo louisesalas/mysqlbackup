@@ -4,8 +4,6 @@ namespace Louise93\Mysqlbackup\Commands;
 
 use Illuminate\Console\Command;
 
-
-use Illuminate\Console\Command;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 
