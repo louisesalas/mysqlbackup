@@ -4,6 +4,7 @@ namespace Louise93\Mysqlbackup;
 
 use Illuminate\Support\ServiceProvider;
 
+
 class MysqlbackupServiceProvider extends ServiceProvider
 {
     /**
@@ -18,7 +19,6 @@ class MysqlbackupServiceProvider extends ServiceProvider
             \Louise93\Mysqlbackup\Commands\MysqlbackupCommand::class,
         ]);
     }
-
     /**
      * Bootstrap services.
      *

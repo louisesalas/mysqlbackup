@@ -51,10 +51,8 @@ class MysqlbackupCommand extends Command
      *
      * @return mixed
      */
-    public function handle()
-    {
+    public function handle(){
         //
-
         try {
             $this->process->mustRun();
 
